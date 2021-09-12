@@ -1,0 +1,107 @@
+.post {
+    width:100%;
+    box-shadow: 0px 0px 16px -8px rgba(0,0,0,0.68);
+    margin: 30px 0;
+}
+
+.postWrapper{
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.postTop{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.postTopLeft {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+
+.postProfileImg {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #31344b;
+    cursor: pointer;
+}
+
+.postUsername {
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 10px;
+}
+
+.postDate {
+    background-color: transparent;
+    font-size: 12px;
+}
+
+.postTopRight{
+    background-color: transparent;
+}
+
+.postTopRightIcon{
+    background-color: transparent;
+}
+
+.postCenter {
+    margin: 20px 0;
+    background-color: transparent;
+}
+
+.postText{
+    background-color: transparent;
+}
+
+.postImg {
+    margin-top: 20px;
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+    background-color: transparent;
+}
+
+.postBottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+.postBottomLeft{
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+}
+
+.likeIcon{
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.postLikeCounter{
+    font-size: 15px;
+    background-color: transparent;
+}
+
+.postBottomRight{
+    background-color: transparent;
+}
+
+.postCommentText{
+    cursor: pointer;
+    border-bottom: 1px dashed gray;
+    font-size: 15px;
+    background-color: transparent;
+}

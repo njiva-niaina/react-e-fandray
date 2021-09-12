@@ -1,0 +1,28 @@
+.sideBarFriendList{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.sideBarFriend{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    background-color: white;
+    padding: 7px;
+    color: #31344b;
+    box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+    border-radius: 7px;
+}
+
+.sideBarFriendName{
+    background-color: transparent;
+}
+
+.sideBarFriendImg{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
