@@ -1,0 +1,143 @@
+.content{
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contentContact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.contactDesc{
+    display: flex;
+    align-items: center;
+}
+
+.contactImg{
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 10px;
+}
+
+.contactStatus{
+    height: 10px;
+    width: 10px;
+    background-color: limegreen;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.contactIcon{
+    color: gray;
+    cursor: pointer;
+}
+
+/* CONVERSATION START */
+
+.contentConversation{
+    padding: 10px;
+    margin: 10px;
+    overflow-y: scroll;
+    height: calc(82vh - 120px);
+    display: flex;
+    flex-direction: column;
+}
+
+.receivedMessage, .responseMessage{
+    display: flex;
+    flex-direction: row;
+}
+
+.responseMessage{
+    justify-content: right;
+}
+
+.senderImg, .userImg{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.receivedMessageContent{
+    height: 15px;
+    padding: 12px;
+    background-color: #fff;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+}
+
+.responseMessageContent{
+    border-radius: 10px;
+    border-bottom-right-radius: 0;
+    height: 15px;
+    background-color: red;
+    color: white;
+    padding: 12px;
+}
+
+/* CONVERSATION END */
+
+.contentMessageInputField{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 7px;
+    margin: 15px;
+    align-items: center;
+    background-color: white;
+    border-radius: 23px;
+}
+
+.contentInput{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: transparent;
+}
+
+.micIcon{
+    background-color: transparent;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.contentMessage{
+    background-color: transparent;
+    border: none;
+}
+
+.contentMessage:focus{
+    outline: none;
+}
+
+.contentMessageIcon{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+.icon{
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.sendIcon{
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 5px;
+}

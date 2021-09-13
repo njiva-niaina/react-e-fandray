@@ -1,0 +1,114 @@
+.information, .profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.information{
+    padding: 10px;
+    margin: 10px;
+}
+
+.informationSearch{
+    display: flex;
+    flex-direction: row;
+}
+
+.informationSearch{
+    padding: 7px;
+    margin: 7px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.icon{
+    background-color: transparent;
+}
+
+.informationSearchField{
+    background-color: transparent;
+    border: none;
+    margin-left: 5px;
+}
+
+.profile{
+    margin: 7px;
+    padding: 7px;
+}
+
+.profile span{
+    padding: 2px;
+    margin: 2px;
+}
+
+.profileImg{
+    padding: 3px;
+    margin: 3px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.btn{
+    display: flex;
+    flex-direction: row;
+}
+
+.btnField{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.btnFieldItem{
+    cursor: pointer;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.contact{
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width:100%;
+    justify-content: left;
+    cursor: pointer;
+}
+
+.attachement{
+    width: 100%;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.attachmentCards{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.attachmentCard{
+    width: 45px;
+    height: 45px;
+    margin: 5px;
+    font-size: 12px;
+    background-color: blue;
+    color: white;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+

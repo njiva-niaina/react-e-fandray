@@ -1,0 +1,72 @@
+.listItemWrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.listItem{
+    list-style: none;
+    padding: 12px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 7px;
+}
+
+.listItemProfile{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+}
+
+.listItemProfileImgContainer{
+    position: relative;
+    background: none;
+}
+
+.listItemProfileImg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.listItemProfileIsOnline{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: limegreen;
+    position: absolute;
+    top: -2px;
+    right: 0px;
+    border: 2px solid white;
+}
+
+.listItemProfileDesc, .listItemProfileDesc h4, .listItemProfileDesc small {
+    background: none;
+}
+
+.listProfileDate{
+    background: none;
+    color: gray;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.date{
+    background: none;
+}
+
+.listChatNotification{
+    height: 17px;
+    width: 17px;
+    font-size: 13px;
+    background-color: blue;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: 5px;
+}

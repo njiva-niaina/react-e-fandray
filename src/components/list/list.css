@@ -1,0 +1,53 @@
+.list{
+    padding: 7px;
+    height: calc(100vh - 30px);
+    width:300px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.listProfile{
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.listProfileImg{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover
+}
+
+.listProfileCreateIcon{
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+}
+
+.listSearch{
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    background-color: white;
+    padding: 7px;
+    border-radius: 15px;
+}
+
+.listSearchIcon{
+    background: none;
+}
+
+.listSearchInput{
+    border: none;
+    background: none;
+    margin-left: 10px;
+}
+
+.listSearchInput:focus{
+    outline: none;
+}
