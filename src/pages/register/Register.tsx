@@ -18,12 +18,8 @@ export default function Register() {
                         <input type="email" placeholder="Email" className="loginInput" />
                         <input type="password" placeholder="Password" className="loginInput" />
                         <input type="password" placeholder="Password confirmation" className="loginInput" />
-                        <Link to="/home">
-                            <input type="submit" value="Sign Up" className="loginButton" />
-                        </Link>
-                        <Link to="/">
-                            <button className="loginRegisterBtn">Log into Account</button>
-                        </Link>
+                        <input type="submit" value="Sign Up" className="loginButton"/>
+                        <button className="loginRegisterBtn">Log into Account</button>
                     </div>    
                 </div>
                 

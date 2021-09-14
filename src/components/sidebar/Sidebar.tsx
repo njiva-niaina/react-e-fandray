@@ -13,12 +13,48 @@ interface IState {
 export default function Sidebar() {
     const [friend, setFriend] = useState<IState["friend"]>([
         {
-            username: "Njiva Niaina",
-            img: "/assets/images/1.webp",
+            username: "Ronald Carter",
+            img: "/assets/images/2.jpg",
         },
         {
-            username: "Njiva Niaina",
-            img: "/assets/images/1.webp",
+            username: "Karen CornWell",
+            img: "/assets/images/3.jpg",
+        },
+        {
+            username: "Chad Wang",
+            img: "/assets/images/4.jpg",
+        },
+        {
+            username: "Paul Linscott",
+            img: "/assets/images/5.jpg",
+        },
+        {
+            username: "Mabel Blair",
+            img: "/assets/images/6.jpg",
+        },
+        {
+            username: "Jennifer Kelly",
+            img: "/assets/images/7.jpg",
+        },
+        {
+            username: "Eloise Green",
+            img: "/assets/images/8.jpg",
+        },
+        {
+            username: "Gregory Russell",
+            img: "/assets/images/9.jpg",
+        },
+        {
+            username: "Sharon Santiago",
+            img: "/assets/images/10.jpg",
+        },
+        {
+            username: "Susan Rice",
+            img: "/assets/images/11.jpg",
+        },
+        {
+            username: "Lindsey Harding",
+            img: "/assets/images/12.jpg",
         }
     ]);
     return (

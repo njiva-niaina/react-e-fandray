@@ -13,12 +13,36 @@ interface IState {
 export default function Rightbar() {
     const [online, setOnline] = useState<IState["online"]>([
         {
-            username: "Njiva Niaina",
-            img: "/assets/images/1.webp"
+            username: "Crystal Halladay",
+            img: "/assets/images/23.jpg"
         },
         {
-            username: "Njiva Niaina",
-            img: "/assets/images/1.webp"
+            username: "Maria Fernandez",
+            img: "/assets/images/24.jpg"
+        },
+        {
+            username: "Scott Baker",
+            img: "/assets/images/25.jpg"
+        },
+        {
+            username: "Todd Knutson",
+            img: "/assets/images/26.jpg"
+        },
+        {
+            username: "Kimberly Kay",
+            img: "/assets/images/27.jpg"
+        },
+        {
+            username: "Tamera McKay",
+            img: "/assets/images/28.jpg"
+        },
+        {
+            username: "Thomas Shackelford",
+            img: "/assets/images/29.jpg"
+        },
+        {
+            username: "Rickey Killion",
+            img: "/assets/images/31.jpg"
         }
     ]);
     return (
@@ -28,7 +52,7 @@ export default function Rightbar() {
                     <CardGiftcard className="birthdayImg" htmlColor="orange" />
                     <span className="birthdayText">You and 3 others have birthday today</span>
                 </div>
-                <img src="/assets/images/1.webp" alt="" className="rightbarAd" />
+                <img src="/assets/images/ad.jpg" alt="" className="rightbarAd" />
                 <h4 className="rightbarTitle">Online Friends</h4>
                 <Online online={online} />
             </div>

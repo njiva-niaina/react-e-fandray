@@ -1,27 +1,70 @@
 import "./item.css"
 
-export default function Item() {
-    return (
-            <div className="listItemWrapper">
-                <ul className="listItems">
-                    <li className="listItem">
-                        <div className="listItemProfile">
-                            <div className="listItemProfileImgContainer">
-                                <img src="/assets/images/1.webp" className="listItemProfileImg" alt="" />
-                                <span className="listItemProfileIsOnline"></span>
+interface IProps{
+    person:{
+        "date": string,
+        "username": string,
+        "isOnline": boolean,
+        "isSent": boolean,
+        "content":string,
+        "image":string,
+        "msgCounter":number
+    }[]
+}
+
+const Item : React.FC<IProps> = ({person}) => {
+    const onLine =  <span className="listItemProfileIsOnline"></span>
+
+    const sent = (user:string) => {
+        return (
+            <p className="username">{user}</p>
+        )
+    }
+
+    const received = (user:string) => {
+        return (
+            <h4 className="username">{user}</h4>
+        )
+    }
+
+    const notif = (counter:number) => {
+        return(
+            <small className="listChatNotification">{counter}</small>
+        )
+    }
+
+    const renderItem = () : JSX.Element[] => {
+        return person.map((person) => {
+            return (
+                <div className="listItemWrapper">
+                    <ul className="listItems">
+                        <li className="listItem">
+                            <div className="listItemProfile">
+                                <div className="listItemProfileImgContainer">
+                                    <img src={person.image} className="listItemProfileImg" alt="" />
+                                    {person.isOnline ? onLine : ""}
+                                </div>
+                                <div className="listItemProfileDesc">
+                                    {person.isSent ? sent(person.username) : received(person.username)}
+                                    <small>{person.isSent ? "You: " : ""}{person.content}</small>
+                                </div>
+                                <div className="listProfileDate">
+                                    <small className="date">{person.date}</small>
+                                    {person.isSent ? "" : notif(person.msgCounter)}
+                                </div>
                             </div>
-                            <div className="listItemProfileDesc">
-                                <h4>Njiva Niaina</h4>
-                                <small>Where are you?</small>
-                            </div>
-                            <div className="listProfileDate">
-                                <small className="date">10:34 AM</small>
-                                <small className="listChatNotification">1</small>
-                            </div>
-                        </div>
-                    </li>
+                        </li>
+                    </ul>
+                </div>
+            )
+        })
+    }
     
-                </ul>
-            </div>
+    return (
+        <div>
+            {renderItem()}
+        </div>
     )
 }
+
+export default Item

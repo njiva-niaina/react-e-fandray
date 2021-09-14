@@ -3,6 +3,10 @@
     flex-direction: column;
 }
 
+.listItem:hover{
+    padding:10px;
+}
+
 .listItem{
     list-style: none;
     padding: 12px;
@@ -69,4 +73,8 @@
     border-radius: 50%;
     text-align: center;
     margin-top: 5px;
+}
+
+.username{
+    background-color: white;
 }

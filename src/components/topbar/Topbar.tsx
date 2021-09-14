@@ -1,4 +1,5 @@
 import './topbar.css';
+import {Link} from "react-router-dom";
 import { Search, Person, Chat, Notifications } from "@material-ui/icons";
 
 export default function Topbar() {
@@ -24,7 +25,9 @@ export default function Topbar() {
                         <span className="topBarIconItemBadge">1</span>
                     </div>
                     <div className="topBarIconItem">
-                        <Chat />
+                        <Link to="/chat">
+                            <Chat />
+                        </Link>
                         <span className="topBarIconItemBadge">2</span>
                     </div>
                     <div className="topBarIconItem">

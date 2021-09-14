@@ -9,9 +9,9 @@ export default function Information() {
                 <input type="search" placeholder="Search people" className="informationSearchField" />
             </div>
             <div className="profile">
-                <img src="/assets/images/1.webp" alt="" className="profileImg"/>
-                <span>Njiva Niaina</span>
-                <span>Junior Developer</span>
+                <img src="/assets/images/5.jpg" alt="" className="profileImg"/>
+                <span>Brian Solo</span>
+                <span>Senior Developer</span>
             </div>
             <div className="btn">
                 <div className="btnField">

@@ -1,13 +1,38 @@
 import "./content.css";
+import Discussion from "../discussion/Discussion";
+import {useState} from "react";
 import {Search, FavoriteBorderOutlined, NotificationsNoneOutlined, MicNoneOutlined, AttachFileOutlined, CameraAltOutlined, SentimentSatisfiedOutlined, Send} from "@material-ui/icons";
+import { send } from "process";
+
+interface IState{
+    discussion: {
+        content: string,
+        isReceived: boolean,
+        userImg: string
+    }[], 
+}
 
 export default function Content() {
+
+    const [discussion, setDiscussion] = useState<IState['discussion']>([
+        {
+            content: "Hey dude",
+            isReceived: true,
+            userImg: "/assets/images/5.jpg"
+        },
+        {
+            content: "Hi",
+            isReceived: false,
+            userImg: "/assets/images/1.webp"
+        },
+    ]);
+
     return (
         <div className="content">
             <div className="contentContact">
                 <div className="contactDesc">
-                    <img src="/assets/images/1.webp" alt="" className="contactImg" />
-                    <span>Njiva Niaina</span>
+                    <img src="/assets/images/5.jpg" alt="" className="contactImg" />
+                    <span>Brian Solo</span>
                     <span className="contactStatus"></span>
                 </div>
                 <div className="contactIcon">
@@ -17,46 +42,7 @@ export default function Content() {
                 </div>
             </div>
             <div className="contentConversation">
-                <div className="receivedMessage">
-                    <img src="/assets/images/1.webp" alt="" className="senderImg" />
-                    <span className="receivedMessageContent">Kaiza</span>
-                </div>
-                <div className="responseMessage">
-                    <span className="responseMessageContent">Kaiza</span>
-                    <img src="/assets/images/1.webp" alt="" className="userImg" />
-                </div>
-                <div className="receivedMessage">
-                    <img src="/assets/images/1.webp" alt="" className="senderImg" />
-                    <span className="receivedMessageContent">Kaiza</span>
-                </div>
-                <div className="responseMessage">
-                    <span className="responseMessageContent">Kaiza</span>
-                    <img src="/assets/images/1.webp" alt="" className="userImg" />
-                </div>
-                <div className="receivedMessage">
-                    <img src="/assets/images/1.webp" alt="" className="senderImg" />
-                    <span className="receivedMessageContent">Kaiza</span>
-                </div>
-                <div className="responseMessage">
-                    <span className="responseMessageContent">Kaiza</span>
-                    <img src="/assets/images/1.webp" alt="" className="userImg" />
-                </div>
-                <div className="responseMessage">
-                    <span className="responseMessageContent">Kaiza</span>
-                    <img src="/assets/images/1.webp" alt="" className="userImg" />
-                </div>
-                <div className="receivedMessage">
-                    <img src="/assets/images/1.webp" alt="" className="senderImg" />
-                    <span className="receivedMessageContent">Kaiza</span>
-                </div>
-                <div className="receivedMessage">
-                    <img src="/assets/images/1.webp" alt="" className="senderImg" />
-                    <span className="receivedMessageContent">Kaiza</span>
-                </div>
-                <div className="receivedMessage">
-                    <img src="/assets/images/1.webp" alt="" className="senderImg" />
-                    <span className="receivedMessageContent">Kaiza</span>
-                </div>
+                <Discussion discussion={discussion} />
             </div>
             <div className="contentMessageInputField">
                 <div className="contentInput">
@@ -67,9 +53,10 @@ export default function Content() {
                     <AttachFileOutlined className="icon"/>
                     <CameraAltOutlined className="icon"/>
                     <SentimentSatisfiedOutlined className="icon"/>
-                    <Send className="sendIcon"/>
+                    <Send className="sendIcon" />
                 </div>
             </div>
         </div>
     )
 }
+
